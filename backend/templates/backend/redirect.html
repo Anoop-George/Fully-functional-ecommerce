@@ -1,0 +1,9 @@
+{% extends "users/base.html" %} {% load crispy_forms_tags %} {% block content %}
+<div class="content-section">
+  <h6>You have successfully paid the amount,Please check your email inbox</h6>
+  <p>Update your profile with delivary address, If you have't updated yet</p>
+  <button class="btn btn-outline-info">
+    <a href="/accounts/profile/"> Update Profile </a>
+  </button>
+</div>
+{% endblock content %}

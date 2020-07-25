@@ -1,0 +1,20 @@
+
+{% extends "users/base.html" %}
+{% load crispy_forms_tags %}
+{% block content %}
+    <div class="content-section">
+      <h6>Configured Secure payment options </h6>
+      <form action="{% url 'payments-charge' %}" method="POST">
+        {% csrf_token %}
+        <script
+          src="https://checkout.stripe.com/checkout.js"
+          class="stripe-button"
+          data-key="{{ key }}"
+          data-description="Pay for Electro World"
+          data-billing-address="true"
+          data-currency="inr"
+          data-locale="auto"
+        ></script>
+      </form>
+    </div>
+{% endblock content %}
