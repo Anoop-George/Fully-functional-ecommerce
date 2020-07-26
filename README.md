@@ -10,7 +10,7 @@ test mode running @ https://ecommerceproject.pythonanywhere.com/#/
 
 try,
 
-username: dell
+username: test
 password : test@123
 
 Some features (login using Google, Stripe payment, Sign Up with recaptcha v3) does not work as I parked website in free subdomain.
